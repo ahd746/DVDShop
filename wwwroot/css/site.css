@@ -1,0 +1,122 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+/*CSS from PHP Course semster 2 and i add some staff*/
+.main {
+    background: #efefef;
+    height:620px;
+    padding: 10px;
+}
+
+* {
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.75), 0px -1px 1px rgba(0, 0, 0, 0.75) !important;
+}
+
+.jumbotron {
+    background-color: #ecf0f1;
+    box-shadow: 10px 10px 20px #c9cccd, -10px -10px 20px #ffffff;
+}
+
+.btn {
+    color: #333;
+    border: none;
+    background: #ecf0f1 !important;
+    box-shadow: 8px 8px 15px #c9cccd, -8px -8px 15px #ffffff;
+    transition: 0.4s;
+}
+
+    .btn:hover {
+        color: #333;
+        box-shadow: 4px 4px 10px #c9cccd, -4px -4px 10px #ffffff;
+    }
+
+    .btn:active, .btn:focus {
+        color: #333 !important;
+        box-shadow: inset 2px 2px 8px #c9cccd, inset -2px -2px 8px #ffffff;
+    }
+
+input,select, input:focus {
+    border-radius: 50px !important;
+    background: #ecf0f1 !important;
+    box-shadow: inset 3px 3px 7px #c9cccd, inset -3px -3px 7px #ffffff;
+    border: none !important;
+}
+
+    input[name="country_code"], input[name="area_code"], input[name="phone_number"] {
+        text-align: center;
+    }
+
+textarea {
+    padding: 1em 2em !important;
+}
+th {
+    cursor:pointer;
+}
