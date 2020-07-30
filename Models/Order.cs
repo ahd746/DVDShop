@@ -23,9 +23,11 @@ namespace DVDShop.Models
         public decimal Total { get; set; }
         [Required]
         [StringLength(50)]
+        [Display(Name ="Fist Name")]
         public string FirstName { get; set; }
         [Required]
         [StringLength(50)]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
         [Required]
         [StringLength(255)]
@@ -38,6 +40,8 @@ namespace DVDShop.Models
         public string Province { get; set; }
         [Required]
         [StringLength(10)]
+
+        [Display(Name = "Postal Code")]
         public string PostalCode { get; set; }
         [Required]
         [StringLength(15)]

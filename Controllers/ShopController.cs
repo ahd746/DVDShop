@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using DVDShop.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DVDShop.Controllers
 {
@@ -86,7 +87,12 @@ namespace DVDShop.Controllers
             _context.SaveChanges();
             return RedirectToAction("Cart");
         }
+        [Authorize]
+        public IActionResult Checkout() {
+            return View();
+        }
 
+        private void Migratecart() { }
     }
 }
 
