@@ -6,10 +6,12 @@
 }
 
 <h1>Movies</h1>
-
-<p>
-    <a asp-action="Create">Add New Movie</a>
-</p>
+@if (User.IsInRole("Administrator"))
+{
+    <p>
+        <a asp-action="Create">Add New Movie</a>
+    </p>
+}
 <table class="table sortable">
     <thead>
         <tr>
@@ -28,33 +30,53 @@
             <th>
                 @Html.DisplayNameFor(model => model.Category)
             </th>
-            <th>Actions</th>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <th>Actions</th>
+            }
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Year)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Category.Name)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ProductId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ProductId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ProductId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Year)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category.Name)
+                </td>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <td>
+                        @if (User.IsInRole("Administrator"))
+                        {
+                            <a asp-action="Edit" asp-route-id="@item.ProductId">Edit |</a>
+                            <a asp-action="Delete" asp-route-id="@item.ProductId">Delete |</a>
+                        }
+                        <a asp-action="Details" asp-route-id="@item.ProductId">Details</a>
+                    </td>
+                }
+            </tr>
+        }
     </tbody>
 </table>
+@if (!User.Identity.IsAuthenticated)
+{
+    <p class="text-center text-danger mt-5">
+        To see movies details and more please Log in or if you don't have an account please Register
+    </p>}
+@if (User.IsInRole("Customer"))
+{
+    <p class="text-center text-danger mt-5">
+        Edit, Create, Delete allowed only to Admin
+    </p>}

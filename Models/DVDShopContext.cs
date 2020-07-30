@@ -36,7 +36,7 @@ namespace DVDShop.Models
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Cart>(entity =>
             {
-                entity.Property(e => e.CartId).ValueGeneratedNever();
+                //entity.Property(e => e.CartId).ValueGeneratedNever();
 
                 entity.Property(e => e.Quantity).HasDefaultValueSql("((1))");
 

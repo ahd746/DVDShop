@@ -41,6 +41,7 @@ namespace DVDShop
             //    .AddEntityFrameworkStores<DVDShopContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,6 +65,8 @@ namespace DVDShop
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {
