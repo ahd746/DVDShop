@@ -1,10 +1,11 @@
 ﻿using System;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace DVDShop.Models
 {
-    public partial class DVDShopContext : DbContext
+    public partial class DVDShopContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
         public DVDShopContext()
         {
@@ -25,13 +26,14 @@ namespace DVDShop.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=LAPTOP-TPP02VKS\\SQLSERVER2019;Initial Catalog=DVDShop;Integrated Security=True");
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+  //              optionsBuilder.UseSqlServer("Data Source=LAPTOP-TPP02VKS\\SQLSERVER2019;Initial Catalog=DVDShop;Integrated Security=True");
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Cart>(entity =>
             {
                 entity.Property(e => e.CartId).ValueGeneratedNever();

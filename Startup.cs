@@ -31,8 +31,14 @@ namespace DVDShop
             services.AddDbContext<DVDShopContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<DVDShopContext>();
+            services.AddIdentity<ApplicationUser, ApplicationRole>()
+            .AddDefaultUI()
+            .AddRoles<ApplicationRole>()
+            .AddRoleManager<RoleManager<ApplicationRole>>()
+            .AddEntityFrameworkStores<DVDShopContext>()
+            .AddDefaultTokenProviders();
+            //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            //    .AddEntityFrameworkStores<DVDShopContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
