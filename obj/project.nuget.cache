@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+K7EOdUxsUfxIdZMIU/CD22trUb9CIqQzQ0f1apBUSyB1F8GIO9F4DqQ+9KvtOZAW1BbU/LzmYeZrKDl8+iJQA==",
+  "dgSpecHash": "EA1hZh3fp4A3UBhKYYACmIN1MvC2iAQ7GWRWfchRAEAGztYgxupZ1n4ctwiQtBW1Bs6I4O10RKXcYzeDXfeaLQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\engah\\Downloads\\Semester_3\\4.C#\\projects\\DVDShop\\DVDShop.csproj",
   "expectedPackageFiles": [
@@ -90,6 +90,7 @@
     "C:\\Users\\engah\\.nuget\\packages\\sqlitepclraw.core\\2.0.2\\sqlitepclraw.core.2.0.2.nupkg.sha512",
     "C:\\Users\\engah\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.2\\sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512",
     "C:\\Users\\engah\\.nuget\\packages\\sqlitepclraw.provider.dynamic_cdecl\\2.0.2\\sqlitepclraw.provider.dynamic_cdecl.2.0.2.nupkg.sha512",
+    "C:\\Users\\engah\\.nuget\\packages\\stripe.net\\37.27.0\\stripe.net.37.27.0.nupkg.sha512",
     "C:\\Users\\engah\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\engah\\.nuget\\packages\\system.buffers\\4.3.0\\system.buffers.4.3.0.nupkg.sha512",
     "C:\\Users\\engah\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
