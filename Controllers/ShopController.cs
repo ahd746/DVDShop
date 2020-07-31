@@ -43,14 +43,23 @@ namespace DVDShop.Controllers
             var product = _context.Product.SingleOrDefault(p => p.ProductId == ProductId);
             var price = product.Price;
             var cartUsername = GetCartUserName();
-            var cart = new Cart
+
+            var cartItem = _context.Cart.SingleOrDefault(c => c.ProductId ==ProductId && c.Username == cartUsername);
+            if (cartItem == null)
             {
-                ProductId = ProductId,
-                Quantity = Quantity,
-                Price = price,
-                Username = cartUsername
-            };
-            _context.Cart.Add(cart);
+                var cart = new Cart
+                {
+                    ProductId = ProductId,
+                    Quantity = Quantity,
+                    Price = price,
+                    Username = cartUsername
+                };
+                _context.Cart.Add(cart);
+            }
+            else {
+                cartItem.Quantity +=  Quantity;
+                _context.Update(cartItem);
+            }
             _context.SaveChanges();
             return RedirectToAction("Cart");
 
@@ -87,12 +96,32 @@ namespace DVDShop.Controllers
             _context.SaveChanges();
             return RedirectToAction("Cart");
         }
+
         [Authorize]
         public IActionResult Checkout() {
             return View();
         }
+        [Authorize]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Checkout([Bind("FirstName,LastName,Address,City,Province,PostalCode,Phone")] Order order) {
+            order.OrderDate = DateTime.Now;
+            order.UserId = User.Identity.Name;
 
-        private void Migratecart() { }
+            var cartItems = _context.Cart.Where(c => c.Username == User.Identity.Name);
+            decimal cartTotal = (from c in cartItems
+                                 select c.Quantity * c.Price).Sum();
+            order.Total = cartTotal;
+            HttpContext.Session.SetString("cartTotal", cartTotal.ToString());
+            return RedirectToAction("Payment");
+        }
+
+        public IActionResult Payment()
+        {
+            return View();
+        }
+
+
     }
 }
 
