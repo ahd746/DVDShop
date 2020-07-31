@@ -67,6 +67,7 @@ C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\bin\Debug\netcoreapp3.
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\bin\Debug\netcoreapp3.1\Stripe.net.dll
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
@@ -152,6 +153,9 @@ C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\bin\Debug\netcoreapp3.
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\DVDShop.AssemblyInfoInputs.cache
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\DVDShop.AssemblyInfo.cs
+C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\DVDShop.csproj.CoreCompileInputs.cache
+C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\DVDShop.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\DVDShop.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\DVDShop.RazorAssemblyInfo.cache
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\DVDShop.RazorAssemblyInfo.cs
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\DVDShop.TagHelpers.input.cache
@@ -175,7 +179,10 @@ C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\Razor\Views\Shop\Browse.cshtml.g.cs
+C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\Razor\Views\Shop\Cart.cshtml.g.cs
+C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\Razor\Views\Shop\Checkout.cshtml.g.cs
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\Razor\Views\Shop\Index.cshtml.g.cs
+C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\Razor\Views\Shop\Payment.cshtml.g.cs
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\Razor\Views\Shop\ProductDetails.cshtml.g.cs
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
@@ -188,11 +195,6 @@ C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\DVDShop.dll
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\DVDShop.pdb
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\DVDShop.genruntimeconfig.cache
+C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Details.cshtml.g.cs
+C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\Razor\Views\Orders\Index.cshtml.g.cs
 C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\DVDShop.csprojAssemblyReference.cache
-C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\Razor\Views\Shop\Cart.cshtml.g.cs
-C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\Razor\Views\Shop\Checkout.cshtml.g.cs
-C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\Razor\Views\Shop\Payment.cshtml.g.cs
-C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\bin\Debug\netcoreapp3.1\Stripe.net.dll
-C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\DVDShop.csproj.CoreCompileInputs.cache
-C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\DVDShop.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\engah\Downloads\Semester_3\4.C#\projects\DVDShop\obj\Debug\netcoreapp3.1\DVDShop.MvcApplicationPartsAssemblyInfo.cache
