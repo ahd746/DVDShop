@@ -106,8 +106,28 @@ namespace DVDShop.Controllers
         [Authorize]
         public IActionResult Checkout()
         {
+            MigrateCart();
             return View();
         }
+
+        private void MigrateCart()
+        {
+            if (HttpContext.Session.GetString("CartUsername") != User.Identity.Name)
+            {
+                var cartUsername = GetCartUserName();
+                var cartItems = _context.Cart.Where(c => c.Username == cartUsername);
+                foreach (var item in cartItems)
+                {
+                    item.Username = User.Identity.Name;
+                    _context.Update(item);
+                }
+                _context.SaveChanges();
+                HttpContext.Session.SetString("CartUsername", User.Identity.Name);
+            }
+        }
+
+
+
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
