@@ -45,7 +45,7 @@ Create, Edit and Delete contolers make used only by admin role only any other ro
 Assignment 3:				
 ******************************
 Impotant Note: Because my site was a rating site like IMDB so i change it to Movies store so i can sell something 
-for sake of assignmnet 3  
+for sake of assignmnet 3A and 3B  
 
 Functional “Shop and Cart” are visible to users that are logged in or anonymous.
 Shopping Cart populates from Categories, and each item in your categories is populated by products from DBase.
